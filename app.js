@@ -10,11 +10,11 @@ const discordKey = process.env.DISCORD_KEY
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", ""] });
 
 // Login to the Discord client with a bot token
-client.login("MTA4MTc1ODE0ODU4NDU1MDQzMQ.GrQQ8R.Qg_CB-wECqtbxH6btN59KzEkJW8SXYLDRMA2r0");
+client.login(discordKey);
 
 // Create a new OpenAI configuration with an API key
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: openaiKey,
 });
 
 // Create a new OpenAI API instance with the configuration
